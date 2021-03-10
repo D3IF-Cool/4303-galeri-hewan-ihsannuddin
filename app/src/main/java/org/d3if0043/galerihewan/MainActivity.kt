@@ -1,7 +1,5 @@
 package org.d3if0043.galerihewan
 
-import Hewan
-import MainAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration

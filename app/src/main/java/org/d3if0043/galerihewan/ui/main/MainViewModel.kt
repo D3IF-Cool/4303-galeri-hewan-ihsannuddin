@@ -26,6 +26,6 @@ class MainViewModel : ViewModel() {
             }
         }
     }
-    
+
     fun getData(): LiveData<List<Hewan>> = data
 }

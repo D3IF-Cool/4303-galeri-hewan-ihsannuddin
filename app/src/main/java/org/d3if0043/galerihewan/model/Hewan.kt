@@ -1,4 +1,4 @@
-package org.d3if0043.galerihewan
+package org.d3if0043.galerihewan.model
 
 data class Hewan(
 

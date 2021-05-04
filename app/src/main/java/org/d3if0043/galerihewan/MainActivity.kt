@@ -2,30 +2,17 @@ package org.d3if0043.galerihewan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.RecyclerView
-import org.d3if0043.galerihewan.databinding.ActivityMainBinding
+import org.d3if0043.galerihewan.model.Hewan
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    //private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-
-
-        with(binding.recyclerView) {
-            addItemDecoration(DividerItemDecoration(context, RecyclerView.VERTICAL))
-            adapter = MainAdapter(getData())
-            setHasFixedSize(true)
-        }
-
-
+        setContentView(R.layout.activity_main)
     }
-
+}
 
     private fun getData(): List<Hewan> {
         return listOf(

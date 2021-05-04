@@ -7,7 +7,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
-
     private const val BASE_URL = "https://dif.indraazimi.com/"
 
     private val moshi = Moshi.Builder()
@@ -29,4 +28,5 @@ import retrofit2.http.GET
         fun getHewanUrl(nama: String): String {
             return BASE_URL + "hewan/$nama.jpg"
         }
+        enum class ApiStatus { LOADING, SUCCESS, FAILED }
     }
